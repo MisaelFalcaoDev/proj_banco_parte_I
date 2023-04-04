@@ -1,5 +1,5 @@
-
 import json
+from datetime import date
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)
@@ -7,13 +7,13 @@ app = Flask(__name__)
 users = [
     {
         'name': 'Misael',
-        'cpf': '12345678945',
-        'birth': '2000-07-27'
+        'cpf': 12345678945,
+        'birth' : date(2000, 7, 27)
     },
     {
         'name': 'Moacir',
-        'cpf': '98765432165',
-        'birth': '1999-01-05'
+        'cpf': 98765432165,
+        'birth' : date(1999, 1, 5)
     }
 ]
 
